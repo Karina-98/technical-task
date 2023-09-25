@@ -1,71 +1,80 @@
 import React from 'react';
-import { useFormik } from 'formik';
+import { Formik, Form, Field } from 'formik';
+import { object, string } from 'yup';
+import { Button, ContainerField, ContainerSingIn, DivSingUp, LinkSingUp, Text, TextBtn, TextSingUp } from './Login.styled';
+import { Title } from 'components/Title/Title';
 
-import { Button, Form, Label } from './Login.styled';
 
-export const Login = () => {
-  const formik = useFormik({
-    initialValues: {
-      email: '',
-      password: '',
-    },
-    onSubmit: values => {
-    console.log(values);
-    },
-  });
-   
-    return (<div>
-      <h1>Sing in</h1>
-    <Form onSubmit={formik.handleSubmit}>
-      <input
-        id="email"
-        name="email"
-        type="email"
-        placeholder="Email"
-        onChange={formik.handleChange}
-        value={formik.values.email}
-      />
-      <input
-        id="password"
-        name="password"
-        type="password"
-        placeholder="Password"
-        onChange={formik.handleChange}
-        value={formik.values.password}
-      />
-      <Button type="submit">Sign In</Button>
-        </Form>
-        </div>
-  );
+const emailRegex = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+const passwordRegex =
+  /^(?=.*\d)(?=.*[a-zA-Z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,32}$/;
+
+const initialValues = {
+  email: '',
+  password: '',
 };
 
-// import { Button, Input } from "@chakra-ui/react"
-// import { Form, Label } from "./Login.styled"
+const schema = object({
+  email: string()
+    .email()
+    .matches(emailRegex, 'Invalid email format')
+    .required(),
+  password: string()
+    .matches(passwordRegex, 'Must contain at least 1 capital and 1 digit')
+    .required(),
+});
 
-// export const Login = () => {
-//     return (  <Form  autoComplete="off">
-//       <Label>
-//         Email
-//         <Input spacing={3} size="lg" type="email" name="email" />
-//       </Label>
-//       <Label>
-//         Password
 
-//           <Input
-//             spacing={3}
-//             size="lg"
+export const Login = () => {
+  // const dispatch = useDispatch();
 
-//             name="password"
-//           />
+  // const onSubmit = (values, { resetForm }) => {
+  //   dispatch(logIn(values));
+  //   resetForm();
+  // };
+   
+  return (<>
+    <ContainerSingIn>
+      <Title>Sign In</Title>
+      <Text>
+        Welcome! Please enter your credentials to login to the platform:
+      </Text>
+      <Formik
+        initialValues={initialValues}
+        validationSchema={schema}
+        // onSubmit={onSubmit}
+      >
+        <Form>
+          <ContainerField>
+            <Field
+              type="email"
+              name="email"
+              placeholder="Email"
+              label="Email"
+              autoComplete="off"
+            />
+          </ContainerField>
+          <Field
+            type="password"
+            name="password"
+            placeholder="Password"
+            label="Password"
+            passwordBtn
+            autoComplete="off"
+            inputStyles={{ gap: '20px',  }}
+          />
+          <Button type="submit">
+            <TextBtn>Sign In</TextBtn>
+          </Button>
+        </Form>
+      </Formik>
+      <DivSingUp>
+        <TextSingUp>Don’t have an account? </TextSingUp>
+        <LinkSingUp to={'/signup'}>Sign Up</LinkSingUp>
+      </DivSingUp>
+    </ContainerSingIn>
+    
+  </>
+  )
+}
 
-//       </Label>
-//       <Button
-//         size="lg"
-//         colorScheme="green"
-//         padding={10}
-//         type="submit"
-//       >
-//         Log In
-//       </Button>
-//     </Form>)
-// }
