@@ -1,8 +1,10 @@
 import { styled } from "styled-components";
 
-export const Div = styled.div`
-
-maxWidth: 960px;
+export const ContainerHeader = styled.div`
+display: flex;
+justify-content: space-between;
+maxWidth: 1440px;
 margin: 0px auto;
- padding: 0px 16px;
+ padding: 45px 120.36px;
 `
+
