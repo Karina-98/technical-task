@@ -1,5 +1,13 @@
 @import-normalize; /* bring in normalize.css styles */
 
+@font-face {
+  font-family: 'Circular std';
+  src: url('./fonts/circular-std-medium-500\ \(2\).ttf') format('tts');
+  /* Укажите правильный путь к файлу шрифта */
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

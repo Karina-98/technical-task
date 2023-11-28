@@ -7,6 +7,7 @@ height: 45px;
 flex-shrink: 0;
 flex-direction: column;
 justify-content: center;
+padding: 15px 34px;
 color: var(--Complementary-Green, #46B8C8);
 background-color: transparent;
 text-align: center;
@@ -25,9 +26,13 @@ font-size: 18px;
 font-style: normal;
 font-weight: 400;
 line-height: 18px; 
-letter-spacing: -0.18px;`
+letter-spacing: -0.18px;
+margin-right: 40px;
+`
 
 export const DivNavigation = styled.div`
 display: flex;
 justify-content: center;
+align-content: center;
+align-items: center;
 `

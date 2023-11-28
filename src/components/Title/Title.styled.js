@@ -1,18 +1,11 @@
-import  styled  from '@emotion/styled';
+
+import { styled } from "styled-components";
 
 export const H1 = styled.h1`
-font-family: Roboto;
-font-size: 24px;
+color: #3D4F5C;
+font-family: Circular Std;
+font-size: 50px;
 font-style: normal;
 font-weight: 700;
-line-height: 1.16;
-
- @media (min-width: 768px){
-font-size: 32px;
-line-height: 1.37; 
- }
-  @media (min-width: 1440px){
- 
-
- }
-`
+line-height: 50px; 
+letter-spacing: -1px;`

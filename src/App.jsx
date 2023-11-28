@@ -3,7 +3,10 @@
 // import { Lauout } from './Layout/Layout';
 // import { Registration } from './Registration/Registration';
 
+import { AboutUs } from "components/AboutUs/AboutUs";
 import { Header } from "./components/Header/Header";
+import { Welcome } from "./components/Welcome/Welcome"
+import { LoveProblem } from "components/LoveProblem/LoveProblem";
 
 // import { LoginPage } from 'pages/Login/Login';
 
@@ -16,7 +19,12 @@ export const App = () => {
     //     <Route path='login' element={<LoginPage />} />
     //   </Route>
     // </Routes>
-
-    <Header/>
+    <>
+     <Header />
+      <Welcome />
+      <AboutUs />
+      <LoveProblem />
+    </>
+   
   );
 };
