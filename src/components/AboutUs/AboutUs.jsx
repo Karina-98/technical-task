@@ -3,6 +3,7 @@ import { TextH1 } from 'components/Text/Text.styled';
 import { Title } from 'components/Title/Title';
 import {
   ContainerAboutUs,
+  ContainerUs,
   Div,
   DivText,
   Image,
@@ -13,12 +14,15 @@ import {
 } from './AboutUs.styled';
 
 import {ReactComponent as Vector} from "../../assets/icon/Vector.svg"
-import image from "../../assets/images/aboutUs/image-aboutUs.jpg"
+import image from "../../assets/images/AboutUs/image-aboutUs.jpg"
 import { ContainerBackground } from 'components/Container/ContainerBackground';
+import { Element } from 'react-scroll';
 
 export const AboutUs = () => {
   return (
-      <ContainerBackground>
+    <ContainerBackground>
+      <Element name="AboutUs"></Element>
+      <ContainerUs>
       <ContainerAboutUs>
         <Div>
           <Title>Who we are</Title>
@@ -56,7 +60,9 @@ export const AboutUs = () => {
           <Vector/>
           <Text>Each startup solving one problem at a time</Text>
         </Item>
-      </List>
+        </List>
+      </ContainerUs>
+      
     </ContainerBackground>
   );
 };

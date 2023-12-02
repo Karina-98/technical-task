@@ -1,4 +1,13 @@
-import { styled } from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const growOnHoverAnimation = keyframes`
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+`;
 
 export const DivWelcome = styled.div``;
 
@@ -40,6 +49,16 @@ export const ButtonWelcome = styled.button`
   background: #46b8c8;
   padding: 13px 20px;
   border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease; 
+
+
+  &:hover {
+color: var(--Complementary-Green, #46B8C8);
+background-color: #fff;
+border: 1px solid var(--Complementary-Green, #46B8C8);
+animation: ${growOnHoverAnimation} 0.3s ease forwards;
+  }
 `;
 export const Image = styled.img`
   width: 705px;

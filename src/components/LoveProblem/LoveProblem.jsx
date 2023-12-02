@@ -1,8 +1,19 @@
 import { Container } from 'components/Container/Container';
 import { ReactComponent as Left } from '../../assets/icon/Left.svg';
 import { ReactComponent as Right } from '../../assets/icon/Right.svg';
+import { ReactComponent as Close } from '../../assets/icon/x.svg';
+import people from '../../assets/images/LoveProblem/people.png';
 import { ReactComponent as Task } from '../../assets/icon/Task.svg';
-import { Div, Text } from './LoveProblem.styled';
+import {
+  Div,
+  DivClose,
+  DivRectangle,
+  DivRectangleSmall,
+  DivTask,
+  Image,
+  Text,
+  TextTask,
+} from './LoveProblem.styled';
 
 export const LoveProblem = () => {
   return (
@@ -11,7 +22,20 @@ export const LoveProblem = () => {
         <Left />
         <Text>We love solving problems!</Text>
         <Right />
-        <Task />
+        <DivTask>
+          <Task />
+        </DivTask>
+        <TextTask>
+          Hi! I am Ben, your virtual assistant. How can I make your day better?
+        </TextTask>
+        <DivRectangle>
+          <DivRectangleSmall></DivRectangleSmall>
+        </DivRectangle>
+              <Image src={people} alt="people" />
+              <DivClose>
+                  <Close />
+              </DivClose>
+        
       </Div>
     </Container>
   );

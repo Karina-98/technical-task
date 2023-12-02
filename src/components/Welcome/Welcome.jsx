@@ -7,12 +7,15 @@ import {
   TitleWelcome,
 } from './Welcome.styled';
 import { TextH1 } from 'components/Text/Text.styled';
-import image from '../../assets/images/welcome/background_welcome.jpg';
+import image from '../../assets/images/Welcome/background_welcome.jpg';
+import { Link } from 'react-scroll'
 
 export const Welcome = () => {
   return (
     <Container>
+      
       <Div>
+        <Link to="Work" smooth={true} duration={500}>
         <DivWelcome>
           <TitleWelcome>We Create Startups.</TitleWelcome>
           <TextH1>
@@ -21,7 +24,7 @@ export const Welcome = () => {
           <ButtonWelcome>See our works</ButtonWelcome>
            <Image alt="image-welcome" src={image} />
         </DivWelcome>
-       
+       </Link>
       </Div>
     </Container>
   );

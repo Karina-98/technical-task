@@ -12,3 +12,10 @@ margin: 0px auto;
 padding: 0px 120px;
 background-color: #FBFAFA;
 `
+
+export const DivContainerForm = styled.div`
+maxWidth: 1440px;
+margin: 0px auto;
+padding: 0px 120px;
+background-color: var(--Secondary-Yellow, #FFC351);
+`
