@@ -1,20 +1,31 @@
 {
   "files": {
     "main.css": "/technical-task/static/css/main.074d36e7.css",
-    "main.js": "/technical-task/static/js/main.ead4928f.js",
-    "static/media/background_welcome.jpg": "/technical-task/static/media/background_welcome.9f125356cd3fb5240644.jpg",
+    "main.js": "/technical-task/static/js/main.3c66e5c2.js",
+    "static/media/BackgroundWelcome.jpg": "/technical-task/static/media/BackgroundWelcome.9f125356cd3fb5240644.jpg",
     "static/media/Right.svg": "/technical-task/static/media/Right.c77bfcff6521341a0d168539e719f7d3.svg",
     "static/media/Left.svg": "/technical-task/static/media/Left.2cd8a37e61d11e762726b87b1f0c92cc.svg",
     "static/media/circular-std-medium-500 (2).ttf": "/technical-task/static/media/circular-std-medium-500 (2).3fcb6535e39024a69e30.ttf",
+    "static/media/codekeeper.jpg": "/technical-task/static/media/codekeeper.45368328845b8080ab5d.jpg",
+    "static/media/hiringLeft.png": "/technical-task/static/media/hiringLeft.1e289047d0ae88bdc8cf.png",
+    "static/media/feedback.jpg": "/technical-task/static/media/feedback.d9d947dbfeced776d421.jpg",
+    "static/media/hiringRight.png": "/technical-task/static/media/hiringRight.e22b25f4142e0c58f55f.png",
+    "static/media/legasSite.jpg": "/technical-task/static/media/legasSite.513bcb9983bd18fd45d1.jpg",
+    "static/media/Tolq.jpg": "/technical-task/static/media/Tolq.f9e3437a93d39a9abc22.jpg",
+    "static/media/Subtract.png": "/technical-task/static/media/Subtract.52d52474beeb884883e9.png",
     "static/media/startupz.svg": "/technical-task/static/media/startupz.31c2c11da21f2462809c02fed2b4d219.svg",
+    "static/media/instagram.svg": "/technical-task/static/media/instagram.82a9aa3a3e03f36500f2b0068b0c622e.svg",
+    "static/media/twitter.svg": "/technical-task/static/media/twitter.fcf21fc0c039ac6e835d4cdcb8432451.svg",
     "static/media/Task.svg": "/technical-task/static/media/Task.c17a5112302fda06694fd035f8fb4fe9.svg",
+    "static/media/Linkedin.svg": "/technical-task/static/media/Linkedin.169547cce5b9d481c65493f4ee0be61a.svg",
     "index.html": "/technical-task/index.html",
+    "static/media/x.svg": "/technical-task/static/media/x.780a1dfd724a0bf5267963b7d027b0ab.svg",
     "static/media/Vector.svg": "/technical-task/static/media/Vector.e288ea1d4c879383c0cece9fb47bc442.svg",
     "main.074d36e7.css.map": "/technical-task/static/css/main.074d36e7.css.map",
-    "main.ead4928f.js.map": "/technical-task/static/js/main.ead4928f.js.map"
+    "main.3c66e5c2.js.map": "/technical-task/static/js/main.3c66e5c2.js.map"
   },
   "entrypoints": [
     "static/css/main.074d36e7.css",
-    "static/js/main.ead4928f.js"
+    "static/js/main.3c66e5c2.js"
   ]
 }
