@@ -1,8 +1,8 @@
 import { Title } from 'components/Title/Title';
 import Tolq from '../../assets/images/OurWork/Tolq.jpg';
-import Codekeeper from '../../assets/images/OurWork/Codekeeper.jpg';
-import Feedback from '../../assets/images/OurWork/Feedback.jpg';
-import LegalSite from '../../assets/images/OurWork/LegasSite.jpg';
+import Codekeeper from '../../assets/images/OurWork/codekeeper.jpg';
+import Feedback from '../../assets/images/OurWork/feedback.jpg';
+import LegalSite from '../../assets/images/OurWork/legasSite.jpg';
 import { ReactComponent as Left } from '../../assets/icon/Left.svg';
 import { ReactComponent as Right } from '../../assets/icon/Right.svg';
 import { Container } from 'components/Container/Container';
