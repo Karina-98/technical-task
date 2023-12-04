@@ -14,7 +14,7 @@ import {
 } from './AboutUs.styled';
 
 import { ReactComponent as Vector } from "../../assets/icon/Vector.svg";
-import image from "../../assets/images/AboutUs/image-aboutUs.jpg"
+import Img from "../../assets/images/AboutUs/image-aboutUs.jpg"
 import { ContainerBackground } from 'components/Container/ContainerBackground';
 import { Element } from 'react-scroll';
 
@@ -39,7 +39,7 @@ export const AboutUs = () => {
         </Div>
         <Image
           alt="image about us"
-          src={image}
+          src={Img}
         />
       </ContainerAboutUs>
       <List>
