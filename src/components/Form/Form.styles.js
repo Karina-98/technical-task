@@ -7,16 +7,21 @@ position: relative;
 `
 
 export const Title = styled.h1`
-  width: 677px;
+  width: 300px;
   color: #fff;
   font-family: Circular Std;
-  font-size: 60px;
+  font-size: 55px;
   font-style: normal;
   font-weight: 700;
   line-height: 55px;
   letter-spacing: -1.2px;
   overflow-wrap: break-word;
   word-wrap: break-word;
+
+  @media(min-width: 768px){
+    width: 677px;
+    font-size: 60px;
+  }
   
 `;
 
@@ -35,7 +40,7 @@ export const Text = styled.p`
 `;
 
 export const Forma = styled.form`
-  width: 512px;
+  width: 250px;
   height: 601px;
   display: flex;
   flex-direction: column;
@@ -46,10 +51,15 @@ export const Forma = styled.form`
   border-radius: 10px;
   background: #f3f3f3;
   box-shadow: 0px 8px 35px 0px rgba(187, 169, 142, 0.15);
+
+
+  @media(min-width: 768px){
+    width: 512px;
+  }
 `;
 
 export const Input = styled.input`
-  width: 429px;
+  width: 259px;
   height: 54px;
   flex-shrink: 0;
   border-radius: 10px;
@@ -64,10 +74,14 @@ export const Input = styled.input`
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
+
+  @media(min-width: 768px){
+    width: 429px;
+  }
 `;
 
 export const Textarea = styled.textarea`
-  width: 429px;
+  width: 259px;
   height: 270px;
   flex-shrink: 0;
   border-radius: 10px;
@@ -82,6 +96,10 @@ export const Textarea = styled.textarea`
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
+
+  @media(min-width: 768px){
+    width: 429px;
+  }
 `;
 
 export const Button = styled.button`
@@ -102,6 +120,11 @@ export const Button = styled.button`
 
 export const Image = styled.img`
 position: absolute;
-right: -50px;
-bottom: 0;
+right: 0;
+bottom: 150px;
+
+@media(min-width: 768px){
+    right: -50px;
+    bottom: 0;
+}
 `

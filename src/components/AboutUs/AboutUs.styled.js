@@ -13,6 +13,7 @@ const pulseAnimation = keyframes`
   }
 `;
 
+
 export const ContainerAboutUs = styled.div`
   
   display: flex;
@@ -22,12 +23,20 @@ export const ContainerAboutUs = styled.div`
 
 export const ContainerUs = styled.div`
 padding-top: 143px;
-padding-bottom: 157px;
+padding-bottom: 127px;
+
+@media(min-width: 768px){
+  padding-bottom: 157px;
+}
 `
 
 export const DivText = styled.div`
   margin-top: 32px;
-  margin-right: 212px;
+ 
+
+  @media(min-width: 768px){
+ margin-right: 212px;
+  }
 `;
 
 export const Div = styled.div``;
@@ -40,9 +49,22 @@ export const Image = styled.img`
 `;
 
 export const List = styled.ul`
-  display: flex;
+flex-wrap: wrap;
   li:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+
+ @media(min-width: 768px){
+display: flex;
+
+ }
+
+ @media(min-width: 1440px){
+li:not(:last-child) {
     margin-right: 80px;
+    margin-bottom: 0;
+ }
  }
 `;
 

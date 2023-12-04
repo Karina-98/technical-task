@@ -6,9 +6,19 @@ export const Div = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 156px;
-  padding-bottom: 140px;
+  padding-top: 120px;
+  padding-bottom: 350px;
   position: relative;
+
+  @media(min-width: 768px){
+ 
+
+  }
+
+  @media(min-width: 1440px){
+ padding-top: 156px;
+  padding-bottom: 140px;
+  }
 `;
 
 export const Text = styled.p`
@@ -27,7 +37,20 @@ export const Text = styled.p`
 export const DivTask = styled.div`
   position: absolute;
   right: 110px;
-  top: 50px;
+  top: 350px;
+  left: 1px;
+
+  @media(min-width: 768px){
+top: 280px;
+left: 110px;
+
+  }
+
+  @media(min-width: 1440px){
+top: 50px;
+left:820px;
+
+  }
 `;
 
 export const TextTask = styled.p`
@@ -41,7 +64,20 @@ export const TextTask = styled.p`
   line-height: 14px;
   position: absolute;
   right: 130px;
-  top: 60px;
+  top: 360px;
+  left: 30px;
+
+   @media(min-width: 768px){
+    top:290px;
+    left: 140px;
+
+  }
+
+  @media(min-width: 1440px){
+top: 60px;
+left: 850px;
+
+  }
 
 `;
 
@@ -53,6 +89,19 @@ export const DivRectangle = styled.div`
   background: #fff;
   position: absolute;
   right: 10px;
+  top: 450px;
+
+  @media(min-width: 768px){
+    top: 380px;
+    right: 60px;
+
+  }
+
+  @media(min-width: 1440px){
+top: 140px;
+right: 0;
+
+  }
 `;
 export const DivRectangleSmall = styled.div`
   width: 96px;
@@ -67,10 +116,32 @@ export const Image = styled.img`
   position: absolute;
   z-index: 26;
   right: 51px;
+  top: 460px;
+  
+  @media(min-width: 768px){
+    top: 400px;
+    right: 100px;
+  }
+
+  @media(min-width: 1440px){
+    top: 160px;
+    right: 40px;
+  }
 `;
 
 export const DivClose = styled.div`
   position: absolute;
   right: 0;
-  top: 60px;
+  top: 320px;
+
+  @media(min-width: 768px){
+    top: 280px;
+    right: 50px;
+  }
+
+
+  @media(min-width: 1440px){
+    top:60px;
+    right: 0;
+  }
 `;

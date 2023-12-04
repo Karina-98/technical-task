@@ -29,7 +29,7 @@ export const App = () => {
     <div>
       
       <Header />
-      <Welcome />
+       <Welcome /> 
       <AboutUs />
       <LoveProblem />
       <OurValues />

@@ -57,7 +57,7 @@ export const TextCodekeeper = styled.p`
 `;
 
 export const Text = styled.p`
-  width: 387px;
+  width: 250px;
   color: #3d4f5c;
   text-align: center;
   font-family: Circular Std;
@@ -66,10 +66,14 @@ export const Text = styled.p`
   font-weight: 400;
   line-height: 20px;
   letter-spacing: -0.16px;
+
+  @media(min-width: 768px){
+    width: 387px;
+  }
 `;
 
 export const Item = styled.li`
-  width: 365px;
+  width: 150px;
   padding: 45px 101px 50px 100px;
 
   flex-shrink: 0;
@@ -80,6 +84,16 @@ export const Item = styled.li`
   border-radius: 30px;
   background: #fff;
   box-shadow: 0px 8px 35px 0px rgba(187, 169, 142, 0.15);
+
+  &:not(:last-child){
+ margin-bottom: 25px;
+}
+
+@media(min-width: 768px){
+  width: 365px;
+   margin-bottom: 0px;
+  
+}
 `;
 
 export const List = styled.ul`
@@ -87,8 +101,13 @@ export const List = styled.ul`
   margin-bottom: 180px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 
-  li {
+
+  
+
+  @media(min-width: 1440px){
+    li {
     margin-bottom: 25px;
     margin-right: 25px;
   }
@@ -102,6 +121,7 @@ export const List = styled.ul`
   li:nth-child(4) {
     margin-right: 0;
   }
+  }
 `;
 
 export const Image = styled.img`
@@ -110,11 +130,11 @@ export const Image = styled.img`
 `;
 
 export const TextCreate = styled.p`
-  width: 882px;
+  width: 200px;
   color: var(--Primary-Orange, #fb8958);
   text-align: center;
   font-family: Circular Std;
-  font-size: 40px;
+  font-size: 26px;
   font-style: normal;
   font-weight: 700;
   line-height: 45px;
@@ -122,6 +142,16 @@ export const TextCreate = styled.p`
   margin-left: 35px;
   margin-right: 35px;
   margin-bottom: 180px;
+
+   @media(min-width: 768px){
+width: 400px;
+ font-size: 40px;
+  }
+
+  @media(min-width: 1440px){
+width: 882px;
+ font-size: 40px;
+  }
 `;
 
 export const DivCreate = styled.div`

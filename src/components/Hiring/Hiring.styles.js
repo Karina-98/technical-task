@@ -20,7 +20,7 @@ position: relative;
 `
 
 export const Text = styled.p`
-width: 443px;
+width: 343px;
 color: var(--Primary-Orange, #FB8958);
 text-align: center;
 font-family: Circular Std;
@@ -31,6 +31,10 @@ line-height: 30px;
 letter-spacing: -0.24px;
 margin-bottom: 30px;
 margin-top: 30px;
+
+@media(min-width: 768px){
+    width: 443px;
+}
 `
 
 export const Button = styled.button`
@@ -61,10 +65,21 @@ animation: ${growOnHoverAnimation} 0.3s ease forwards;
 
 export const ImageLeft = styled.img`
 position: absolute;
-left: -120px;
+left: -70px;
+display: none;
+
+@media(min-width: 768px){
+    display: flex;
+}
 `
 
 export const ImageRight = styled.img`
 position: absolute;
-right: -120px;
+right: -70px;
+display: none;
+
+@media(min-width: 768px){
+    display: flex;
+    
+}
 `
