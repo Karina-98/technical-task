@@ -22,9 +22,7 @@ export const OurValues = () => {
       <ContainerValue>
         <DivTitle>
                   <Title>Our core values</Title>
-                  {/* <Image> */}
-                      {/* <Light width={90} height={108} /> */}
-                  {/* </Image> */}
+                  
                   <Image src={light} alt='light' />
         </DivTitle>
         
