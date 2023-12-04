@@ -7,7 +7,7 @@ import {
   TitleWelcome,
 } from './Welcome.styled';
 import { TextH1 } from 'components/Text/Text.styled';
-import Img from '../../assets/images/Welcome/background_welcome.jpg';
+import Img from '../../assets/images/Welcome/BackgroundWelcome.jpg';
 import { Link } from 'react-scroll'
 
 export const Welcome = () => {
