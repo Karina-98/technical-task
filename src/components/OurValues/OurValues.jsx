@@ -11,7 +11,7 @@ import {
   List,
 } from './OurValues.styled';
 
-import light from '../../assets/images/OurValues/light.png';
+import Light from '../../assets/images/OurValues/light.png';
 // import { ReactComponent as Light } from '../../assets/icon/Light.svg'
 
 import { ContainerBackground } from 'components/Container/ContainerBackground';
@@ -23,7 +23,7 @@ export const OurValues = () => {
         <DivTitle>
                   <Title>Our core values</Title>
                   
-                  <Image src={light} alt='light' />
+                  <Image src={Light} alt='light' />
         </DivTitle>
         
         <List>

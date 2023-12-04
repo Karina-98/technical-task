@@ -7,7 +7,7 @@ import {
   TitleWelcome,
 } from './Welcome.styled';
 import { TextH1 } from 'components/Text/Text.styled';
-import image from '../../assets/images/Welcome/background_welcome.jpg';
+import Img from '../../assets/images/Welcome/background_welcome.jpg';
 import { Link } from 'react-scroll'
 
 export const Welcome = () => {
@@ -22,7 +22,7 @@ export const Welcome = () => {
             We are startup studio that develops and launches new companies.
           </TextH1>
           <ButtonWelcome>See our works</ButtonWelcome>
-           <Image alt="image-welcome" src={image} />
+           <Image alt="image-welcome" src={Img} />
         </DivWelcome>
        </Link>
       </Div>

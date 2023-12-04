@@ -10,7 +10,7 @@ import {
   Image,
 } from './Form.styles';
 import { useState } from 'react';
-import image from '../../assets/images/Form/Subtract.png';
+import Img from '../../assets/images/Form/Subtract.png';
 import { Element } from 'react-scroll';
 
 
@@ -99,7 +99,7 @@ export const Form = () => {
 
           <Button type="submit">Shoot us a message</Button>
         </Forma>
-        <Image src={image} alt="" />
+        <Image src={Img} alt="" />
       </DivForm>
     </ContainerForm>
   );

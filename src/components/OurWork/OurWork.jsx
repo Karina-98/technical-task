@@ -1,8 +1,8 @@
 import { Title } from 'components/Title/Title';
-import tolq from '../../assets/images/OurWork/Tolq.jpg';
-import codekeeper from '../../assets/images/OurWork/codekeeper.jpg';
-import feedback from '../../assets/images/OurWork/feedback.jpg';
-import legalSite from '../../assets/images/OurWork/legasSite.jpg';
+import Tolq from '../../assets/images/OurWork/Tolq.jpg';
+import Codekeeper from '../../assets/images/OurWork/codekeeper.jpg';
+import Feedback from '../../assets/images/OurWork/feedback.jpg';
+import LegalSite from '../../assets/images/OurWork/legasSite.jpg';
 import { ReactComponent as Left } from '../../assets/icon/Left.svg';
 import { ReactComponent as Right } from '../../assets/icon/Right.svg';
 import { Container } from 'components/Container/Container';
@@ -36,7 +36,7 @@ export const OutWork = () => {
               all pieces of the localization puzzle in one single integrated
               solution.
             </Text>
-            <Image src={tolq} alt="Tolq" />
+            <Image src={Tolq} alt="Tolq" />
             <ButtonMore />
           </Item>
           <Item>
@@ -45,7 +45,7 @@ export const OutWork = () => {
               Feedback Labs turns feedback into actionable insights for your
               team.
             </Text>
-            <Image src={feedback} alt="Tolq" />
+            <Image src={Feedback} alt="Feedback" />
             <ButtonMore />
           </Item>
           <Item>
@@ -55,7 +55,7 @@ export const OutWork = () => {
               publishers to provide source code escrow as part of service level
               and license agreements.
             </Text>
-            <Image src={codekeeper} alt="Tolq" />
+            <Image src={Codekeeper} alt="Codekeeper" />
             <ButtonMore />
           </Item>
           <Item>
@@ -64,7 +64,7 @@ export const OutWork = () => {
               Protected against legal risks, privacy compliant and always
               up-to-date with the latest regulatory developments.
             </Text>
-            <Image src={legalSite} alt="Tolq" />
+            <Image src={LegalSite} alt="LegalSite" />
             <ButtonMore />
           </Item>
         </List>
