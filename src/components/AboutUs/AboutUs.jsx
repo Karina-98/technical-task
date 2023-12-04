@@ -14,7 +14,7 @@ import {
 } from './AboutUs.styled';
 
 import { ReactComponent as Vector } from "../../assets/icon/Vector.svg";
-import Img from "../../assets/images/AboutUs/image-aboutUs.jpg"
+import Img from "../../assets/images/AboutUs/ImageAboutUs.jpg"
 import { ContainerBackground } from 'components/Container/ContainerBackground';
 import { Element } from 'react-scroll';
 

@@ -2,7 +2,7 @@ import { Container } from 'components/Container/Container';
 import { ReactComponent as Left } from '../../assets/icon/Left.svg';
 import { ReactComponent as Right } from '../../assets/icon/Right.svg';
 import { ReactComponent as Close } from '../../assets/icon/x.svg';
-import People from '../../assets/images/LoveProblem/people.png';
+import People from '../../assets/images/LoveProblem/People.png';
 import { ReactComponent as Task } from '../../assets/icon/Task.svg';
 import {
   Div,

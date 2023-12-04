@@ -11,7 +11,7 @@ import {
   List,
 } from './OurValues.styled';
 
-import Light from '../../assets/images/OurValues/light.png';
+import Light from '../../assets/images/OurValues/Light.png';
 // import { ReactComponent as Light } from '../../assets/icon/Light.svg'
 
 import { ContainerBackground } from 'components/Container/ContainerBackground';

@@ -1,8 +1,8 @@
 import { ContainerBackground } from "components/Container/ContainerBackground"
 import { Title } from "components/Title/Title"
 import { Button, DivHiring, ImageLeft, ImageRight, Text } from "./Hiring.styles"
-import HiringLeft from '../../assets/images/Hiring/hiringLeft.png'
-import HiringRight from '../../assets/images/Hiring/hiringRight.png'
+import HiringLeft from '../../assets/images/Hiring/HiringLeft.png'
+import HiringRight from '../../assets/images/Hiring/HiringRight.png'
 
 export const Hiring = () => {
     return <ContainerBackground>
